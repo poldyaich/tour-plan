@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CAGI;;AAJ5B,AAGE,CAHD,CAGC,IAAI,CAAC;EACH,WAAW,EAAE,MAAM;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_settings.sass",
+        "../sass/blocks/_header.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
