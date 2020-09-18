@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.header {
+}
+
+.workspace {
+  margin: auto;
+  max-width: 1110px;
+  /* align-items: center; */
+}
+
+.workspace-top {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1110px;
+  padding: 40px 0px;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+}
