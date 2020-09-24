@@ -28,8 +28,13 @@
       width: 340px
 @media (max-width: 768px)
   .workspace
-    max-width: 576px
+    max-width: 700px
     width: 92%
+
+ 
+
+        
+@media  ( max-width: 680px )
   .navbar
     &_search, &-menu, &_user
       display: none
@@ -48,7 +53,31 @@
         width: 16px
         height: 1px
         background-color: #333333
-@media  ( max-width: 576px )
+  .stars
+    flex-basis: content
+  .hotel
+    &-name
+      flex-basis: 100%
+    &-wrapper
+      justify-content: space-between
+    // &-description
+    //   margin: 0
+
+    &-info
+      &_text
+        width: 100%
+      &_name
+        margin-top: 10px
+        margin-bottom: 0
+      &_rating
+        display: none
+      &_offer
+        order: -1
+        margin-left: 0
+      
+
+
+    
   .logo
     width: 99px
   
