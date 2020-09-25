@@ -11,4 +11,8 @@ var mySwiper = new Swiper(".swiper-container", {
 
   effect: "coverflow",
   speed: 1700,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
