@@ -1046,6 +1046,7 @@ template {
   .workspace,
   .newsletter-workspace {
     max-width: 700px;
+    width: 92%;
   }
   .logo {
     width: 132px;
@@ -1089,6 +1090,9 @@ template {
   .map {
     width: 340px;
   }
+  .reviews-slider_item::after, .reviews-slider_item::before {
+    display: none;
+  }
 }
 
 @media (max-width: 760) {
@@ -1096,41 +1100,35 @@ template {
     max-width: 700px;
     width: 92%;
   }
-}
-
-.reviews_title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
-}
-
-.reviews-slider_item {
-  padding: 0 30px 30px;
-}
-
-.reviews-slider_item::after, .reviews-slider_item::before {
-  display: none;
-}
-
-.reviews-slider_item_button {
-  top: 32px;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-}
-
-.reviews-slider_item_button--prev {
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  margin-left: -65px;
-}
-
-.reviews-slider_item_button--next {
-  right: 50%;
-  -webkit-transform: translate(50%, 0);
-          transform: translate(50%, 0);
-  margin-right: -65px;
+  .reviews_title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .reviews-slider_item {
+    padding: 0 30px 30px;
+  }
+  .reviews-slider_item::after, .reviews-slider_item::before {
+    display: none;
+  }
+  .reviews-slider_item_button {
+    top: 32px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews-slider_item_button--prev {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-left: -65px;
+  }
+  .reviews-slider_item_button--next {
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+    margin-right: -65px;
+  }
 }
 
 @media (max-width: 685px) {
@@ -1144,6 +1142,9 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .newsletter_subscribe {
+    width: 100%;
   }
   .navbar_search, .navbar-menu, .navbar_user {
     display: none;
@@ -1201,9 +1202,6 @@ template {
         -ms-flex-order: -1;
             order: -1;
     margin-left: 0;
-  }
-  .hotel-slider {
-    height: 350px;
   }
   .hotel-right {
     -webkit-box-orient: vertical;

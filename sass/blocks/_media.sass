@@ -5,6 +5,7 @@
 @media (max-width: 1200px)
   .workspace
     max-width: 960px
+
   
   .hotel
     &-slider
@@ -18,6 +19,8 @@
   .workspace, 
   .newsletter-workspace
     max-width: 700px
+    width: 92%
+    
   .logo
     width: 132px
   .navbar
@@ -36,7 +39,6 @@
     &_input
       width: 340px
   .hotel
-    
     &-grid
       flex-direction: column
     &-slider
@@ -48,34 +50,39 @@
     width: 340px
   .map
     width: 340px
+  .reviews
+    &-slider
+      &_item
+        &::after,&::before
+          display: none
 
 
 @media (max-width: 760)
   .workspace, .newsletter-workspace
     max-width: 700px
     width: 92%    
-.reviews
-  &_title    
-    font-style: normal
-    font-weight: bold
-    font-size: 30px
-    line-height: 38px
-  &-slider
-    &_item
-      padding: 0 30px 30px
-      &::after, &::before
-        display: none
-      &_button
-        top: 32px
-        transform: translate(-50%, 0)
-        &--prev
-          left: 50%
+  .reviews
+    &_title    
+      font-style: normal
+      font-weight: bold
+      font-size: 30px
+      line-height: 38px 
+    &-slider
+      &_item
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+        &_button
+          top: 32px
           transform: translate(-50%, 0)
-          margin-left: -65px
-        &--next
-          right: 50%
-          transform: translate(50%, 0)
-          margin-right: -65px
+          &--prev
+            left: 50%
+            transform: translate(-50%, 0)
+            margin-left: -65px
+          &--next
+            right: 50%
+            transform: translate(50%, 0)
+            margin-right: -65px
 
  
 
@@ -87,6 +94,8 @@
       width: 92%
       flex-direction: column
       align-items: flex-start
+    &_subscribe
+      width: 100%
   .navbar
     &_search, &-menu, &_user
       display: none
@@ -112,9 +121,7 @@
       flex-basis: 100%
     &-wrapper
       justify-content: space-between
-    // &-description
-    //   margin: 0
-  
+
     &-info
       &_text
         width: 100%
@@ -128,8 +135,6 @@
         margin-left: 0
   
   .hotel
-    &-slider
-      height: 350px    
     &-right
       flex-direction: column
       min-height: 450px
@@ -137,6 +142,7 @@
     width: 100%
   .map
     width: 100%
+
 
 
 @media  ( max-width: 576px )
