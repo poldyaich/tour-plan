@@ -5,6 +5,14 @@
 @media (max-width: 1200px)
   .workspace
     max-width: 960px
+  .slider
+    width: 590px
+  .swiper
+    &-slide
+      &_img
+        width: 100%
+        height: 100%
+        object-fit: cover
 
 @media (max-width: 992px)
   .workspace
@@ -26,6 +34,20 @@
   .search
     &_input
       width: 340px
+  .hotel
+    &-grid
+      flex-direction: column
+    &_slider
+      margin-bottom: 30px
+    &-right
+      flex-direction: row
+  .booking
+    width: 340px
+  .slider
+    width: 100%
+  .map
+    width: 340px
+
 @media (max-width: 768px)
   .workspace
     max-width: 700px
@@ -62,7 +84,7 @@
       justify-content: space-between
     // &-description
     //   margin: 0
-
+  
     &-info
       &_text
         width: 100%
@@ -74,12 +96,26 @@
       &_offer
         order: -1
         margin-left: 0
-      
+  .slider
+    height: 350px    
+  .hotel
+    &-right
+      flex-direction: column
+      min-height: 450px
+  .booking
+    width: 100%
+  .map
+    width: 100%
 
 
-    
+@media  ( max-width: 576px )
   .logo
     width: 99px
-  
+  .slider
+    height: 250px
+  .hotel
+    &_slider
+      margin-bottom: 20px
+      
   
 

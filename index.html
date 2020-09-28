@@ -131,20 +131,26 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="slider">
+          <div class="slider hotel_slider">
             <!-- Slider main container -->
             <div class="swiper-container">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="img/slide.jpg" alt="" />
+                  <img class="swiper-slide_img" src="img/slide.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide.jpg" alt="" />
+                  <img class="swiper-slide_img" src="img/slide-1.jpg" alt="" />
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/slide.jpg" alt="" />
+                  <img class="swiper-slide_img" src="img/slide-2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide_img" src="img/slide-3.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="swiper-slide_img" src="img/slide-4.jpg" alt="" />
                 </div>
               </div>
 
@@ -155,10 +161,77 @@
             <!-- swiper-container -->
           </div>
           <!-- /.slider -->
+          <div class="hotel-right">
+            <div class="booking">
+              <div class="booking_info">
+                <div class="booking_price">
+                  <span class="booking_start">price starts as</span>
+                  <strong class="booking_pricetag">$ 8,500</strong>
+                  <span class="booking_per-room">per room / night</span>
+                </div>
+                <!-- booking-price -->
+                <div class="booking-room">
+                  <div class="booking_text">
+                    <img src="img/user.png" alt="" class="booking_icon" />
+                    <span class="booking_description">2 x Guests</span>
+                  </div>
+                  <div class="booking_text">
+                    <img src="img/home.png" alt="" class="booking_icon" />
+                    <span class="booking_description">1 x Room</span>
+                  </div>
+                </div>
+                <!-- /.booking-room -->
+              </div>
+              <!-- /.booking_info -->
+              <div class="booking_call-center">
+                <span class="booking_heading">Quick Booking</span>
+                <a class="booking_number" href="tel:12100">
+                  <img src="img/phone-call.png" alt="Icon" />
+                  <span class="booking_num">12100</span>
+                </a>
+              </div>
+              <!-- /.booking_call-center -->
+              <button class="button booking_button">View Other Options</button>
+            </div>
+            <!-- /.booking -->
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.004290948163!2d79.8028647075772!3d7.574509535417035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2c96110de8289%3A0x3fd7668bc2d85eb9!2sGrand%20Hilton%20Hotel!5e0!3m2!1sru!2sru!4v1601185694254!5m2!1sru!2sru"
+                width="100%"
+                height="214"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+            <!-- /.map -->
+          </div>
         </div>
+        <!-- hotel-grid -->
       </div>
       <!-- /.workspace -->
     </section>
+    <section class="newsletter">
+      <div class="newsletter-workspace">
+        <h2 class="newsletter-title">
+          subscribe to our
+          <span class="newsletter-title_strong"> Newsletter </span>
+        </h2>
+        <form action="#" class="subscribe newsletter_subscribe">
+          <input
+            type="text"
+            class="subscribe_input"
+            placeholder="Your email address"
+            name="text"
+          />
+          <button class="subscribe_button">Send</button>
+        </form>
+      </div>
+      <!-- /.newsletter-workspace -->
+    </section>
+    <!-- /.newsletter -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
