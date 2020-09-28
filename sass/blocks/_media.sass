@@ -15,7 +15,8 @@
         object-fit: cover
 
 @media (max-width: 992px)
-  .workspace
+  .workspace, 
+  .newsletter-workspace
     max-width: 700px
   .logo
     width: 132px
@@ -49,7 +50,7 @@
     width: 340px
 
 @media (max-width: 768px)
-  .workspace
+  .workspace, .newsletter-workspace
     max-width: 700px
     width: 92%
 
@@ -57,6 +58,12 @@
 
         
 @media  ( max-width: 680px )
+  .newsletter
+    &-workspace
+      max-width: 675
+      width: 92%
+      flex-direction: column
+      align-items: flex-start
   .navbar
     &_search, &-menu, &_user
       display: none
@@ -116,6 +123,22 @@
   .hotel
     &_slider
       margin-bottom: 20px
+
+  .newsletter
+    padding: 76px 0 83px 0
+
+    &_title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      margin-bottom: 37px
+    &_strong
+      font-style: normal
+      font-weight: 600
+      font-size: 30px
+      line-height: 38px
+  .subscribe
+    width: 100%
       
   
 
