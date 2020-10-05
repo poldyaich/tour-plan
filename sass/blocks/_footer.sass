@@ -1,0 +1,49 @@
+.footer
+  background-color: $dark
+  color: $light
+  padding-top: 108px
+  padding-bottom: 46px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(250px,1fr))
+    grid-gap: 20px
+  &_logo
+    grid-row: 1 / 3
+  &_categories
+    grid-row: 1 / 3
+  &_social
+    &-links
+      display: flex
+      align-items: center
+      max-width: 83px
+      justify-content: space-between
+    &-network
+      display: flex
+      align-items: center
+      grid-row: 2 / 3
+      grid-column: span 2
+  &_contact-details
+    grid-column: span 2
+  &_ul
+    padding: 0
+    margin: 0
+    list-style: none
+  &_title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin: 0
+    margin-bottom: 16px
+    text-transform: uppercase
+    &--inline
+      margin: 0px 43px 0px 0px
+  &_item
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: $footer-text-color
+  &_link
+    text-decoration: none
+    color: inherit
