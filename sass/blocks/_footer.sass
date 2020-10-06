@@ -5,25 +5,38 @@
   padding-bottom: 46px
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(250px,1fr))
+    grid-template-columns: repeat(4, minmax(min-content,1fr))
     grid-gap: 20px
+    grid-auto-rows: minmax(40px, min-content)
+    align-items: start
   &_logo
+    width: 166px
     grid-row: 1 / 3
+    align-self: center
   &_categories
-    grid-row: 1 / 3
+    grid-row: 1 / 4
   &_social
     &-links
       display: flex
       align-items: center
-      max-width: 83px
+      min-width: 83px
       justify-content: space-between
     &-network
       display: flex
       align-content: center
-      grid-row: 2 / 3
+      grid-row: 2 / 4
       grid-column: span 2
-  &_contact-details
-    grid-column: span 2
+
+  &_contact
+    &-details
+      grid-column: span 2
+    &-form
+      grid-column: span 2
+  &_form
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
   &_ul
     padding: 0
     margin: 0
@@ -37,13 +50,57 @@
     margin-bottom: 16px
     text-transform: uppercase
     &--inline
-      margin: 0px
+      margin: 0px 43px 0px 0px
+    &--mb-3
+      margin-bottom: 30px
   &_item
+    display: flex
+    align-items: flex-start
     font-style: normal
     font-weight: normal
     font-size: 14px
     line-height: 160%
     color: $footer-text-color
+    &--mb-2
+      margin-bottom: 20px
+  &_icon
+    margin-right: 20px
+    &-wrapper
+      min-width: 40px
+  &_text
+    color: $footer-text-color
+    margin-bottom: 22px
   &_link
     text-decoration: none
     color: inherit
+  &_input
+    background-color: #ffffff
+    border-radius: 4px
+    border: none
+    padding: 0px 23px
+    height: 50px
+    margin-bottom: 15px
+    flex-basis: 48%
+  &_message
+    background-color: #fff
+    border-radius: 4px
+    padding: 18px 23px
+    border: none
+    flex-basis: 100%
+    margin-bottom: 23px
+  &_button
+    min-width: 160px
+    min-height: 50px
+    padding: 18px
+    font-style: 12px
+    line-height: 15px
+    background-color: $primary
+    color: $light
+    border: none
+    border-radius: 4px
+  &_info
+    font-style: normal
+    font-weight: bold
+    font-style: 12px
+    line-height: 15px
+    c$footer-text-color
