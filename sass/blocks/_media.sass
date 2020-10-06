@@ -2,7 +2,6 @@
   .workspace
     max-width: 960px
 
-  
   .hotel
     &-slider
       width: 590px
@@ -13,14 +12,17 @@
   .card
     width: 230px
     height: 230px
-
+  .footer
+    &_input
+      flex-basis: 100%
+      width: 100%
 
 @media (max-width: 992px)
-  .workspace, 
+  .workspace,
   .newsletter-workspace
     max-width: 700px
     width: 92%
-    
+
   .logo
     width: 132px
   .navbar
@@ -29,7 +31,7 @@
       padding-bottom: 30px
     &_search
       margin-left: auto
-      
+
     &-menu
       padding: 22px 0
       &_link
@@ -63,19 +65,47 @@
   .card
     width: 49%
     height: 250px
-    
-
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &_form
+      margin-bottom: 56px
+    &_input
+      flex-basis: 49%
+    &_logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &_social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &_categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &_additional
+      grid-column: span 2
+    &_legal
+      span 2
+    &_contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
 
 @media (max-width: 760)
   .workspace, .newsletter-workspace
     max-width: 700px
-    width: 92%    
+    width: 92%
   .reviews
-    &_title    
+    &_title
       font-style: normal
       font-weight: bold
       font-size: 30px
-      line-height: 38px 
+      line-height: 38px
     &-slider
       &_item
         padding: 0 30px 30px
@@ -102,10 +132,7 @@
 @media  ( max-width: 741px  )
   .card
     width: 49%
-  
- 
 
-        
 @media  ( max-width: 685px )
   .newsletter
     &-workspace
@@ -152,7 +179,7 @@
       &_offer
         order: -1
         margin-left: 0
-  
+
   .hotel
     &-right
       flex-direction: column
@@ -161,9 +188,9 @@
     width: 100%
   .map
     width: 100%
-    
-
-
+  .footer
+    &_input
+      flex-basis: 100%
 
 @media  ( max-width: 576px )
   .logo
@@ -191,12 +218,37 @@
     width: 100%
   .card
     width: 100%
-.reviews
-  &_title
-    font-weight: bold
-    font-size: 18px
-    line-height: 23px
-    margin-bottom: 42px
-    
-  
-
+  .reviews
+    &_title
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      margin-bottom: 42px
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &_form
+      margin-bottom: 30px
+    &_logo
+      grid-row: 1
+      grid-column: 1
+    &_social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &_additional
+      grid-row: 3
+      grid-column: 1
+    &_categories
+      grid-row: 4
+      grid-column: 1
+    &_legal
+      grid-row: 5
+      grid-column: 1
+    &_contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
